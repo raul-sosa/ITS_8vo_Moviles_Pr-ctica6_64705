@@ -81,8 +81,22 @@ const Pokedex: React.FC<{ children: React.ReactNode }> = ({ children }) => {
               onClick={onBigBlueButtonClick}
             >
             </div>
-            <div id="barbutton1" className="gameboy-button"></div>
-            <div id="barbutton2" className="gameboy-button"></div>
+            <div 
+              id="barbutton1" 
+              className="gameboy-button"
+              onClick={() => {
+                setScreen(EPokedexScreen.MENU);
+                router.push('/home');
+              }}
+            ></div>
+            <div 
+              id="barbutton2" 
+              className="gameboy-button"
+              onClick={() => {
+                setScreen(EPokedexScreen.MENU);
+                router.push('/home');
+              }}
+            ></div>
             <Cross />
           </div>
         </div>
